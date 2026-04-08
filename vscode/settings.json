@@ -1,0 +1,168 @@
+{
+  // === Theme & Appearance ===
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "ayu",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.list.smoothScrolling": true,
+  "workbench.smoothScrolling": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "window.commandCenter": true,
+
+  // === Font & Editor Core ===
+  "editor.fontFamily": "'Monaspace Neon', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.padding.top": 12,
+  "editor.padding.bottom": 12,
+  "editor.accessibilitySupport": "off",
+
+  // === Minimap ===
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+
+  // === Brackets & Guides ===
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.highlightActiveIndentation": true,
+
+  // === Productivity ===
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
+  "editor.linkedEditing": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.suggest.preview": true,
+  "editor.suggest.showStatusBar": true,
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolPath": "last",
+
+  // === Italic Keywords & Comments ===
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "keyword.control",
+          "storage.type",
+          "entity.other.attribute-name"
+        ],
+        "settings": { "fontStyle": "italic" }
+      },
+      {
+        "scope": ["comment"],
+        "settings": { "foreground": "#6A737D", "fontStyle": "italic" }
+      }
+    ]
+  },
+
+  // === File Explorer ===
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.test.ts, ${capture}.spec.ts",
+    "*.tsx": "${capture}.test.tsx, ${capture}.spec.tsx",
+    "*.ex": "${capture}_test.exs",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .npmrc",
+    "tailwind.config.*": "tailwind.config*, postcss.config*"
+  },
+
+  // === Search & Performance ===
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.git": true,
+    "**/deps": true,
+    "**/_build": true
+  },
+  "files.watcherExclude": {
+    "**/_build/**": true,
+    "**/deps/**": true,
+    "**/node_modules/**": true
+  },
+  "files.associations": {
+    "*.heex": "phoenix-heex"
+  },
+
+  // === Git ===
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "scm.diffDecorations": "all",
+  "scm.diffDecorationsGutterWidth": 2,
+
+  // === TypeScript / JavaScript ===
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // === Tailwind CSS ===
+  "tailwindCSS.includeLanguages": {
+    "phoenix-heex": "html",
+    "elixir": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cn\\(([^)]*)\\)", "\"([^\"]*)\""]
+  ],
+
+  // === Emmet ===
+  "emmet.includeLanguages": {
+    "phoenix-heex": "html",
+    "elixir": "html"
+  },
+
+  // === Error Lens ===
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.delay": 300,
+  "errorLens.followCursor": "activeLine",
+
+  // === Terminal ===
+  "terminal.integrated.env.osx": {
+    "PATH": "${env:HOME}/.asdf/shims:${env:HOME}/.asdf/bin:/opt/homebrew/bin:${env:PATH}"
+  },
+  "terminal.integrated.fontFamily": "'Monaspace Neon', monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.8,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+
+  "chat.viewSessions.orientation": "stacked",
+
+  // === Language Overrides ===
+  "[elixir]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls",
+    "editor.formatOnSave": true
+  },
+  "[phoenix-heex]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
