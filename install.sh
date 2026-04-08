@@ -82,6 +82,9 @@ link_file "$DOTFILES_DIR/zprofile"       "$HOME/.zprofile"
 link_file "$DOTFILES_DIR/gitconfig"      "$HOME/.gitconfig"
 link_file "$DOTFILES_DIR/tool-versions"  "$HOME/.tool-versions"
 
+mkdir -p "$HOME/.config"
+link_file "$DOTFILES_DIR/starship.toml"  "$HOME/.config/starship.toml"
+
 # --- VS Code ---
 VSCODE_DIR="$HOME/Library/Application Support/Code/User"
 if [ -d "/Applications/Visual Studio Code.app" ]; then

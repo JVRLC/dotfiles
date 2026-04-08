@@ -1,0 +1,44 @@
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[git_status]
+stashed = "stash"
+untracked = " untracked"
+modified = " modified"
+staged = " staged"
+deleted = " deleted"
+ahead = " ahead"
+behind = " behind"
+
+[package]
+disabled = true
+
+[bun]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[elixir]
+disabled = true
+
+[erlang]
+disabled = true
+
+[rust]
+disabled = true
+
+[golang]
+disabled = true
+
+[ruby]
+disabled = true
