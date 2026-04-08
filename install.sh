@@ -24,12 +24,9 @@ if ! command -v brew &>/dev/null; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# --- CLI Tools ---
-echo "==> Installing CLI tools..."
-brew install \
-  starship eza bat fzf zoxide git-delta fd lazygit \
-  libsodium cmake rust neovim \
-  2>/dev/null || true
+# --- Brewfile (CLI tools, fonts, build deps) ---
+echo "==> Installing from Brewfile..."
+brew bundle --file="$DOTFILES_DIR/Brewfile" --no-lock
 
 # --- Oh My Zsh ---
 echo "==> Installing Oh My Zsh (if needed)..."
@@ -113,7 +110,7 @@ echo "  Setup complete!"
 echo "================================="
 echo ""
 echo "Manual steps remaining:"
-echo "  1. Install Monaspace Neon font: https://monaspace.githubnext.com"
+echo "  1. Update gitconfig with your name and email"
 echo "  2. Open a new terminal to activate the shell"
 echo "  3. Restart VS Code (Cmd+Q, then 'code .')"
 echo ""
