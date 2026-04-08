@@ -7,7 +7,7 @@ My development environment for macOS. One command setup.
 - **Shell**: Zsh + Oh My Zsh + Starship prompt
 - **CLI tools**: eza, bat, fzf, zoxide, delta, fd, lazygit
 - **Version manager**: asdf (Node, Elixir, Erlang, Python)
-- **Editor**: VS Code with Catppuccin Mocha + Monaspace Neon
+- **Editor**: VS Code with Catppuccin Mocha + [Monaspace Neon](https://github.com/githubnext/monaspace)
 - **Git**: delta for diffs, side-by-side view
 
 ## Install

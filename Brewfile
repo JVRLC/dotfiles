@@ -18,7 +18,7 @@ brew "libsodium"
 brew "cmake"
 brew "rust"
 
-# Fonts
+# Fonts — https://github.com/githubnext/monaspace
 cask "font-monaspace"
 
 # Apps (optional — uncomment what you use)
