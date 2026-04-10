@@ -13,7 +13,6 @@ hi Normal guibg=NONE ctermbg=NONE
 " hi LineNr guifg=Grey ctermfg=59
 
 set nocompatible
-set runtimepath+=/home/antoine/.vim-config/ftplugin
 filetype plugin on
 filetype plugin indent on
 set colorcolumn=79
@@ -53,7 +52,7 @@ set ignorecase
 set smartcase
 
 " Encoding
-if has("multi_byte")
+if !has('nvim') && has("multi_byte")
   if &termencoding == ""
     let &termencoding = &encoding
   endif
