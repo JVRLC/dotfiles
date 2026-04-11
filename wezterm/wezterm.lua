@@ -56,7 +56,6 @@ config.cursor_blink_rate = 500
 
 -- Mouse
 config.hide_mouse_cursor_when_typing = true
-config.copy_on_select = true
 
 -- Raccourcis clavier (mêmes qu'Alacritty)
 config.keys = {
