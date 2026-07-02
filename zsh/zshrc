@@ -102,6 +102,9 @@ alias dcl="docker-compose logs -f"
 alias dcp="docker-compose pull"
 alias dcr="docker-compose restart"
 
+# claude
+alias cc="claude"
+
 # =============================================================================
 # FZF
 # =============================================================================
