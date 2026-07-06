@@ -85,6 +85,14 @@ link_file "$DOTFILES_DIR/tool-versions"  "$HOME/.tool-versions"
 mkdir -p "$HOME/.config"
 link_file "$DOTFILES_DIR/starship.toml"  "$HOME/.config/starship.toml"
 
+# --- Global git hooks (personal, machine-only) ---
+echo "==> Linking global git hooks..."
+if [ -e "$HOME/.git-hooks" ] && [ ! -L "$HOME/.git-hooks" ]; then
+  mv "$HOME/.git-hooks" "$HOME/.git-hooks.backup.$(date +%s)"
+fi
+ln -sfn "$DOTFILES_DIR/git-hooks" "$HOME/.git-hooks"
+echo "    $DOTFILES_DIR/git-hooks -> $HOME/.git-hooks"
+
 # --- VS Code ---
 VSCODE_DIR="$HOME/Library/Application Support/Code/User"
 if [ -d "/Applications/Visual Studio Code.app" ]; then
