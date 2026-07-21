@@ -82,6 +82,8 @@ alias meteo="curl http://wttr.in/Sophia-Antipolis"
 alias edt="open 'https://edtweb.univ-cotedazur.fr/direct/index.jsp?code=22311461&login=Individuel&password=&showTree=false&displayConfName=VisuV&projectId=5'"
 alias rg="rgrep -n"
 alias gv="grep -v"
+alias grep="grep --color=auto"
+export GREP_COLORS="ms=01;32:mc=01;32:sl=:cx=:fn=32:ln=32:bn=32:se=32"
 
 # Git
 alias gp="git push"
