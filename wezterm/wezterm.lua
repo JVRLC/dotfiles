@@ -57,6 +57,10 @@ config.cursor_blink_rate = 500
 -- Mouse
 config.hide_mouse_cursor_when_typing = true
 
+-- Permettre les caractères composés avec Option (ex: | sur clavier AZERTY)
+config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = true
+
 -- Raccourcis clavier (mêmes qu'Alacritty)
 config.keys = {
   -- Ctrl+Tab / Ctrl+Shift+Tab → navigation tmux
