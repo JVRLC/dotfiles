@@ -3,8 +3,8 @@
 	pager = delta
 	hooksPath = ~/.git-hooks
 [user]
-	name = CHANGE_ME
-	email = CHANGE_ME
+	name = Serigne
+	email = ssalioub.mbaye@gmail.com
 [commit]
 	gpgsign = false
 [filter "lfs"]

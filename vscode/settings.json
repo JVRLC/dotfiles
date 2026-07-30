@@ -1,7 +1,6 @@
 {
   // === Theme & Appearance ===
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "ayu",
+  "workbench.colorTheme": "Visual Studio Dark - C/C++",
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.list.smoothScrolling": true,
@@ -11,7 +10,7 @@
   "window.commandCenter": true,
 
   // === Font & Editor Core ===
-  "editor.fontFamily": "'Monaspace Neon', monospace",
+  "editor.fontFamily": "'Monaspace Neon NF', monospace",
   "editor.fontSize": 14,
   "editor.lineHeight": 1.8,
   "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
@@ -55,15 +54,20 @@
           "comment",
           "keyword.control",
           "storage.type",
-          "entity.other.attribute-name"
+          "entity.other.attribute-name",
         ],
-        "settings": { "fontStyle": "italic" }
+        "settings": {
+          "fontStyle": "italic",
+        },
       },
       {
         "scope": ["comment"],
-        "settings": { "foreground": "#6A737D", "fontStyle": "italic" }
-      }
-    ]
+        "settings": {
+          "foreground": "#6A737D",
+          "fontStyle": "italic",
+        },
+      },
+    ],
   },
 
   // === File Explorer ===
@@ -71,25 +75,17 @@
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.test.ts, ${capture}.spec.ts",
     "*.tsx": "${capture}.test.tsx, ${capture}.spec.tsx",
-    "*.ex": "${capture}_test.exs",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .npmrc",
-    "tailwind.config.*": "tailwind.config*, postcss.config*"
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
   },
 
   // === Search & Performance ===
   "search.exclude": {
     "**/node_modules": true,
     "**/.git": true,
-    "**/deps": true,
-    "**/_build": true
   },
   "files.watcherExclude": {
-    "**/_build/**": true,
-    "**/deps/**": true,
-    "**/node_modules/**": true
-  },
-  "files.associations": {
-    "*.heex": "phoenix-heex"
+    "**/node_modules/**": true,
   },
 
   // === Git ===
@@ -104,19 +100,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
 
   // === Tailwind CSS ===
-  "tailwindCSS.includeLanguages": {
-    "phoenix-heex": "html",
-    "elixir": "html"
-  },
-  "tailwindCSS.experimental.classRegex": [
-    ["cn\\(([^)]*)\\)", "\"([^\"]*)\""]
-  ],
-
-  // === Emmet ===
-  "emmet.includeLanguages": {
-    "phoenix-heex": "html",
-    "elixir": "html"
-  },
+  "tailwindCSS.experimental.classRegex": [["cn\\(([^)]*)\\)", "\"([^\"]*)\""]],
 
   // === Error Lens ===
   "errorLens.enabledDiagnosticLevels": ["error", "warning"],
@@ -125,9 +109,9 @@
 
   // === Terminal ===
   "terminal.integrated.env.osx": {
-    "PATH": "${env:HOME}/.asdf/shims:${env:HOME}/.asdf/bin:/opt/homebrew/bin:${env:PATH}"
+    "PATH": "${env:HOME}/.asdf/shims:${env:HOME}/.asdf/bin:/opt/homebrew/bin:${env:PATH}",
   },
-  "terminal.integrated.fontFamily": "'Monaspace Neon', monospace",
+  "terminal.integrated.fontFamily": "'Monaspace Neon NF', monospace",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.8,
   "terminal.integrated.fontLigatures.enabled": true,
@@ -139,30 +123,42 @@
   "chat.viewSessions.orientation": "stacked",
 
   // === Language Overrides ===
-  "[elixir]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "JakeBecker.elixir-ls",
-    "editor.formatOnSave": true
-  },
-  "[phoenix-heex]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "JakeBecker.elixir-ls",
-    "editor.formatOnSave": true
-  },
   "[typescript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "files.associations": {
+    ".env*": "dotenv",
+  },
+  "claudeCode.preferredLocation": "panel",
+  "dotenv.enableAutocloaking": false,
+  "docker.extension.enableComposeLanguageServer": false,
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml",
+  ],
+  "extensions.ignoreRecommendations": true,
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "47361EDD-D955-4780-8FD0-A86AB19ABDF8",
+      "isDefault": true,
+    },
+  ],
 }

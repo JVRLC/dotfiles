@@ -2,7 +2,7 @@
 set -e
 
 echo "================================="
-echo "  Elias's Dev Environment Setup"
+echo "  Serigne's Dev Environment Setup"
 echo "================================="
 echo ""
 
@@ -26,7 +26,7 @@ fi
 
 # --- Brewfile (CLI tools, fonts, build deps) ---
 echo "==> Installing from Brewfile..."
-brew bundle --file="$DOTFILES_DIR/Brewfile" --no-lock
+brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 # --- Oh My Zsh ---
 echo "==> Installing Oh My Zsh (if needed)..."
@@ -52,8 +52,6 @@ source "$HOME/.asdf/asdf.sh"
 
 echo "==> Installing asdf plugins..."
 asdf plugin add nodejs 2>/dev/null || true
-asdf plugin add elixir 2>/dev/null || true
-asdf plugin add erlang 2>/dev/null || true
 asdf plugin add python 2>/dev/null || true
 asdf plugin add k6 2>/dev/null || true
 
@@ -85,6 +83,9 @@ link_file "$DOTFILES_DIR/tool-versions"  "$HOME/.tool-versions"
 mkdir -p "$HOME/.config"
 link_file "$DOTFILES_DIR/starship.toml"  "$HOME/.config/starship.toml"
 
+mkdir -p "$HOME/.config/ghostty"
+link_file "$DOTFILES_DIR/ghostty"        "$HOME/.config/ghostty/config"
+
 # --- Global git hooks (personal, machine-only) ---
 echo "==> Linking global git hooks..."
 if [ -e "$HOME/.git-hooks" ] && [ ! -L "$HOME/.git-hooks" ]; then
@@ -110,7 +111,7 @@ fi
 
 # --- Install runtime versions ---
 echo "==> Installing runtime versions from .tool-versions..."
-echo "    This may take a while (Erlang compiles from source)..."
+echo "    This may take a while..."
 cd "$HOME"
 asdf install 2>/dev/null || true
 

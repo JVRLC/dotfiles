@@ -1,13 +1,14 @@
 # dotfiles
 
 My development environment for macOS. One command setup.
+Inspired by @elias-ba
 
 ## What's included
 
 - **Shell**: Zsh + Oh My Zsh + Starship prompt
 - **CLI tools**: eza, bat, fzf, zoxide, delta, fd, lazygit
-- **Version manager**: asdf (Node, Elixir, Erlang, Python)
-- **Editor**: VS Code with Catppuccin Mocha + [Monaspace Neon](https://github.com/githubnext/monaspace)
+- **Version manager**: asdf (Node, Python)
+- **Editor**: VS Code with Catppuccin Mocha + [Monaspace Neon NF](https://github.com/githubnext/monaspace)
 - **Git**: delta for diffs, side-by-side view
 
 ## Install
@@ -21,7 +22,7 @@ chmod +x install.sh
 
 ## Manual steps after install
 
-1. Install [Monaspace Neon](https://monaspace.githubnext.com) font
+1. Select "Monaspace Neon NF" as the font in each terminal app (Brewfile installs it, but font selection is per-app)
 2. Update `gitconfig` with your name and email
 3. Open a new terminal
 4. Restart VS Code
@@ -36,6 +37,8 @@ dotfiles/
   zprofile            # Login shell (Homebrew)
   gitconfig           # Git config with delta
   tool-versions       # asdf global runtime versions
+  starship.toml       # Prompt config (symlinked to ~/.config/starship.toml)
+  ghostty             # Terminal config (symlinked to ~/.config/ghostty/config)
   vscode/
     settings.json     # VS Code settings
     extensions.txt    # VS Code extensions list

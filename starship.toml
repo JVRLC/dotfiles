@@ -1,3 +1,5 @@
+format = """$directory$git_branch$git_status$character"""
+
 [username]
 disabled = true
 
@@ -26,15 +28,6 @@ disabled = true
 disabled = true
 
 [python]
-disabled = true
-
-[elixir]
-disabled = true
-
-[erlang]
-disabled = true
-
-[rust]
 disabled = true
 
 [golang]

@@ -1,46 +1,55 @@
-aaron-bond.better-comments
-alefragnani.project-manager
+# AI / Claude
 anthropic.claude-code
-bradlc.vscode-tailwindcss
-catppuccin.catppuccin-vsc
-christian-kohler.path-intellisense
-davidanson.vscode-markdownlint
-dbaeumer.vscode-eslint
-docker.docker
-donjayamanne.githistory
-eamodio.gitlens
-esbenp.prettier-vscode
-foxundermoon.shell-format
 github.copilot-chat
-github.vscode-github-actions
-github.vscode-pull-request-github
-gruntfuggly.todo-tree
-jakebecker.elixir-ls
-mechatroner.rainbow-csv
+
+# Git / GitHub
+eamodio.gitlens
+donjayamanne.githistory
 mhutchie.git-graph
-ms-azuretools.vscode-containers
-ms-azuretools.vscode-docker
-ms-ossdata.vscode-pgsql
-ms-playwright.playwright
-ms-python.black-formatter
-ms-python.debugpy
+github.vscode-pull-request-github
+github.vscode-github-actions
+
+# Formatting / code quality
+esbenp.prettier-vscode
+dbaeumer.vscode-eslint
+foxundermoon.shell-format
+davidanson.vscode-markdownlint
+tamasfe.even-better-toml
+redhat.vscode-yaml
+streetsidesoftware.code-spell-checker
+usernamehw.errorlens
+yoavbls.pretty-ts-errors
+
+# Python
 ms-python.python
 ms-python.vscode-pylance
+ms-python.debugpy
+ms-python.black-formatter
 ms-python.vscode-python-envs
+
+# Jupyter
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
+
+# Docker / containers / remote
+docker.docker
+ms-azuretools.vscode-containers
 ms-vscode-remote.remote-containers
-ms-vscode-remote.remote-ssh
-ms-vsliveshare.vsliveshare
+
+# Databases
+ms-ossdata.vscode-pgsql
+
+# Visual comfort / UX
+catppuccin.catppuccin-vsc
+ms-vscode.cpptools-themes
 oderwat.indent-rainbow
-pantajoe.vscode-elixir-credo
-phoenixframework.phoenix
-redhat.vscode-yaml
-streetsidesoftware.code-spell-checker
-tamasfe.even-better-toml
-teabyii.ayu
-usernamehw.errorlens
-vitest.explorer
+mechatroner.rainbow-csv
+aaron-bond.better-comments
+
+# Productivity
+alefragnani.project-manager
+christian-kohler.path-intellisense
 wix.vscode-import-cost
-yoavbls.pretty-ts-errors
+bradlc.vscode-tailwindcss
+ms-vsliveshare.vsliveshare
