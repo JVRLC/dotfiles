@@ -161,4 +161,6 @@
       "isDefault": true,
     },
   ],
+  "git.suggestSmartCommit": false,
+  "security.workspace.trust.untrustedFiles": "open",
 }
