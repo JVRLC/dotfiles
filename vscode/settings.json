@@ -5,7 +5,6 @@
   "workbench.tree.renderIndentGuides": "always",
   "workbench.list.smoothScrolling": true,
   "workbench.smoothScrolling": true,
-  "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "none",
   "window.commandCenter": true,
 
@@ -139,9 +138,37 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+  },
+
+  // === CSV / Rainbow CSV ===
+  // BAAC (data.gouv.fr) uses ";" as separator, so *.csv maps to the semicolon mode
   "files.associations": {
     ".env*": "dotenv",
+    "*.csv": "csv (semicolon)",
+    "*.tsv": "tsv",
   },
+  "[csv]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "off",
+    "editor.lineNumbers": "on",
+  },
+  "[csv (semicolon)]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "off",
+    "editor.lineNumbers": "on",
+  },
+  "[tsv]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "off",
+    "editor.lineNumbers": "on",
+  },
+  "editor.largeFileOptimizations": false,
+  "rainbow_csv.enable_rainbow_csv_for_large_files": true,
+  "rainbow_csv.enable_hover": true,
+
+  // === Misc ===
   "claudeCode.preferredLocation": "panel",
   "dotenv.enableAutocloaking": false,
   "docker.extension.enableComposeLanguageServer": false,

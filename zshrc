@@ -41,6 +41,8 @@ alias cat="bat"
 alias gs="git status"
 alias lg="lazygit"
 alias zshconfig="nvim ~/.zshrc"
+alias ds="codewhale" # deepseek
+"
 
 # === Version Manager: asdf (single source of truth) ===
 . "$HOME/.asdf/asdf.sh"
@@ -58,3 +60,4 @@ export GPG_TTY=$(tty)
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
